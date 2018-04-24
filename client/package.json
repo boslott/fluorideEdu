@@ -1,0 +1,41 @@
+{
+  "name": "fluoride-edu",
+  "version": "0.1.0",
+  "private": false,
+  "proxy": "http://localhost:3001/",
+  "description": "A web app to disseminate educational material on the subject of fluoridization",
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.3",
+    "@fortawesome/fontawesome-free-brands": "^5.0.6",
+    "@fortawesome/fontawesome-free-regular": "^5.0.6",
+    "@fortawesome/fontawesome-free-solid": "^5.0.6",
+    "@fortawesome/react-fontawesome": "^0.0.17",
+    "axios": "^0.16.2",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "node-sass-chokidar": "^1.2.2",
+    "popper.js": "^1.12.9",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-grid-system": "^3.1.2",
+    "react-router-dom": "^4.1.2",
+    "react-router-role-authorization": "^1.1.4",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src/Sass src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src/Sass src/ -o src/ --watch --recursive",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "author": "Bo Slott",
+  "license": "MIT",
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "react-test-renderer": "^16.2.0"
+  }
+}
